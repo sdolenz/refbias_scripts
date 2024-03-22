@@ -62,7 +62,7 @@ Rscript panel_plots.R
 echo "Done!"
 echo
 
-# copy the final three panel plots that combine MQ into a single plot to the final_plots subdirectory
+# copy the final three panel plots that combine MQ into a single plot to the mapping_stats_final_plots subdirectory
 
-mkdir -p ./final_plots/
-cp ./panel_plots/*byMQ* ./final_plots/
+mkdir -p ./mapping_stats_final_plots/
+cp ./panel_plots/*byMQ* ./mapping_stats_final_plots/

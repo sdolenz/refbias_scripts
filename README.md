@@ -25,14 +25,7 @@ Here are the workflows and scripts used for the analysis of reference and read l
 ...
 
 ## Mapping stats workflow
-To begin, copy all of the BAMs into a subdirectory called "bams" within a directory referred to in the code as "mismappers". These should be labeled as {mapper}_{species}_div{divergence percentage}_{endogenous content}end_MQ{mapping quality filter}.bam, such as bwaaln_elephant_div9_100end_MQ30.bam or local_bowtie_elephant_div2_1end_MQ1.bam. Then, copy the simulated fasta libraries to a subdirectory "fastas". 
-
-Then run the python script [mapping_stats.py](mapping_stats.py) from the main directory "mismappers". This will output tsvs to a subdirectory created within the code called "new_tsvs" within the main directory. 
-
-Then change to the "new_tsvs" directory (`cd ./new_tsvs`) and run 
-
-
-
+This will generate tsvs and R plots on the mapping statistics of the simulated libraries (including mismapped reads, correctly mapped reads, and unmapped reads). For this, please download the mapping_stats* scripts. You will be able to run the [mapping_stats_pipeline.sh](mapping_stats_pipeline.sh) which will copy the BAMs and simulated fasta libraries needed, run the analyses, and produce three paneled plots of the mentioned statistics. 
 
 ## Acknowledgements
 I would like to thank my coauthors Tom van der Valk, Chenyu Jin, Jonas Oppenheimer, Muhammad Bilal Sharif, Ludovic Orlando, Beth Shapiro, Love Dalén, and Peter D. Heintzman for their help and insightful advice. Also, my amazing cat Pip for keeping me sane during all of the bug fixes. 

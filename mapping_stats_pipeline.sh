@@ -6,13 +6,15 @@ for mapper in bwamem bwaaln verysensitive_bowtie sensitive_bowtie local_bowtie ;
     # change directory to mapping_stats/
     cd ${path}
     
-    # copy BAM files
-    cp ${cp_path}/${mapper}_map/*.bam ./
+    # copy BAM and simulated fasta files
+
+    mkdir -p bams/
+    mkdir -p fastas/
+    
+    cp ${cp_path}/${mapper}_map/*.bam ./bams/
+    cp ${cp_path}/sim_libraries/*.fa ./fastas/
 
 done
-
-# move BAM files to bams subdirectory within mapping_stats
-mv ./*.bam ./bams/
 
 echo
 echo "Done copying BAM files"

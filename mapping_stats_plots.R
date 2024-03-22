@@ -63,6 +63,6 @@ for (file_path in file_paths) {
 
   # Save the plot to a PDF file 
   output_file <- gsub(".tsv", "_plots.pdf", basename(file_path))  
-  ggsave(filename = file.path("panel_plots", output_file), plot = facet_grid, width = 20, height = 8) 
+  ggsave(filename = file.path("mapping_stats_plots", output_file), plot = facet_grid, width = 20, height = 8) 
 }
 

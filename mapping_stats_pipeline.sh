@@ -57,6 +57,7 @@ echo
 echo "Running mapping_stats_plots.R"
 echo
 
+mkdir -p ./mapping_stats_plots/
 Rscript mapping_stats_plots.R
 
 echo "Done!"
@@ -65,4 +66,4 @@ echo
 # copy the final three panel plots that combine MQ into a single plot to the mapping_stats_final_plots subdirectory
 
 mkdir -p ./mapping_stats_final_plots/
-cp ./panel_plots/*byMQ* ./mapping_stats_final_plots/
+cp ./mapping_stats_plots/*byMQ* ./mapping_stats_final_plots/

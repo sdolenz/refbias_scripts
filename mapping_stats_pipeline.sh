@@ -6,6 +6,7 @@ for mapper in bwamem bwaaln verysensitive_bowtie sensitive_bowtie local_bowtie ;
     cp_path=...your parent directory here...
 
     # change directory to mapping_stats/
+    mkdir -p ${path}
     cd ${path}
     
     # copy BAM and simulated fasta files

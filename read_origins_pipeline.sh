@@ -33,7 +33,7 @@ for species in elephant rhino ; do
 
                     cp $cp_path/${mapper}_${species}_div${div}_${quality}_MQ${MQ}.bam ./${mapper}_bams/ 
 
-                    python3 bam_to_tsv.py --bam_file $bam_file --output_file $output_file
+                    python3 read_origins_bam_to_tsv.py --bam_file $bam_file --output_file $output_file
 
                 done
 
@@ -45,11 +45,13 @@ for species in elephant rhino ; do
 
 done
 
+echo
+echo "Done!"
 echo 
-echo "Running knock_knock.R"
+echo "Running read_origins_plots.R"
 echo
 
-Rscript knock_knock.R
+Rscript read_origins_plots.R
 
 
 echo "Done!"

@@ -13,21 +13,21 @@ Here are the workflows and scripts used for the analysis of reference and read l
 
 
 ## Simulated datasets workflow
-Run
+...
 
 ## Emperical datasets workflow
-Run
+...
 
 ## AMBER scripts
-Run
+...
 
 ## Read origins workflow
-Run
+...
 
 ## Mapping stats workflow
-Run
+...
 
 ## Acknowledgements
-Run
+...
 
 ***This project utilized ChatGPT, OpenAI for assistance in writing and editing scripts***

@@ -23,7 +23,7 @@ for (file_path in file_paths) {
     geom_line() +
     labs(x = "", y = "Number of Reads", color = "MQ") +
     theme_minimal() +
-    scale_x_continuous(limits = c(20, NA), breaks = seq(20, 200, by = 20), labels = seq(20, 200, by = 20)) +  # Set x-axis breaks and labels
+    scale_x_continuous(limits = c(20, NA), breaks = seq(20, 200, by = 20), labels = seq(20, 200, by = 20)) +  
     scale_y_continuous(limits = c(0, NA)) +
     theme(axis.title.x = element_blank(), 
         legend.position = "none")
@@ -32,7 +32,7 @@ for (file_path in file_paths) {
       geom_line() +
       labs(x = "Read Length", y = "", color = "MQ") +
       theme_minimal() +
-      scale_x_continuous(limits = c(20, NA), breaks = seq(20, 200, by = 20), labels = seq(20, 200, by = 20)) +  # Set x-axis breaks and labels
+      scale_x_continuous(limits = c(20, NA), breaks = seq(20, 200, by = 20), labels = seq(20, 200, by = 20)) + 
       scale_y_continuous(limits = c(0, NA)) +  
       theme(axis.title.y = element_blank(), 
           legend.position = "none")
@@ -41,7 +41,7 @@ for (file_path in file_paths) {
     geom_line() +
     labs(x = "", y = "", color = "MQ") +
     theme_minimal() +
-    scale_x_continuous(limits = c(20, NA), breaks = seq(20, 200, by = 20), labels = seq(20, 200, by = 20)) +  # Set x-axis breaks and labels
+    scale_x_continuous(limits = c(20, NA), breaks = seq(20, 200, by = 20), labels = seq(20, 200, by = 20)) +  
     scale_y_continuous(limits = c(0, NA)) +
     theme(axis.title.y = element_blank(),  
         axis.title.x = element_blank())

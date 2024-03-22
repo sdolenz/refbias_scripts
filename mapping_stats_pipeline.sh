@@ -31,33 +31,33 @@ cd ${path}/new_tsvs/
 echo
 echo
 
-# run modify_tsv.R in new_tsv directory
+# run mapping_stats_modify_tsv.R in new_tsv directory
 
 echo
-echo "Running modify_tsv.R"
+echo "Running mapping_stats_modify_tsv.R"
 echo
 
-Rscript modify_tsv.R
+Rscript mapping_stats_modify_tsv.R
 
-# run cat_tsv.sh 
+# run mapping_stats_cat_tsv.sh 
 
 echo
-echo "Running cat_tsv.sh"
+echo "Running mapping_stats_cat_tsv.sh"
 echo
 
-bash cat_tsv.sh
+bash mapping_stats_cat_tsv.sh
 
 #change directory back to mapping_stats
 
 cd ${path}/
 
-# run panel_plots.R 
+# run mapping_stats_plots.R 
 
 echo
-echo "Running panel_plots.R"
+echo "Running mapping_stats_plots.R"
 echo
 
-Rscript panel_plots.R
+Rscript mapping_stats_plots.R
 
 echo "Done!"
 echo

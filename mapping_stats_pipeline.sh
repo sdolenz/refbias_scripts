@@ -1,4 +1,4 @@
-#dependencies: samtools/1.16 python/3.9.5 pysam/0.17.0-python3.9.5 biopython/1.80-py3.9.5 R/4.2.1 R_packages/4.2.1
+# dependencies: samtools/1.16 python/3.9.5 pysam/0.17.0-python3.9.5 biopython/1.80-py3.9.5 R/4.2.1 R_packages/4.2.1
 
 for mapper in bwamem bwaaln verysensitive_bowtie sensitive_bowtie local_bowtie ; do
 

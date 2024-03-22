@@ -22,7 +22,7 @@ Here are the workflows and scripts used for the analysis of reference and read l
 ...
 
 ## Read origins workflow
-...
+This will generate tsvs and R plots of the proportions of reads mapping to either bacteria, human, or the endogenous species (elephant or rhino). To run this, please download the read_origins* scripts, in addition to the read_origins_all_headers.tsv, and run the [read_origins_pipeline.sh](read_origins_pipeline.sh), which will calculate the proportion of reads from each of the simulated libraries that are from bacteria, human, or the endogenous species and produce line plots to interpret this data. 
 
 ## Mapping stats workflow
 This will generate tsvs and R plots on the mapping statistics of the simulated libraries (including mismapped reads, correctly mapped reads, and unmapped reads). For this, please download the mapping_stats* scripts. You will be able to run the [mapping_stats_pipeline.sh](mapping_stats_pipeline.sh) which will copy the BAMs and simulated fasta libraries needed, run the analyses, and produce three paneled plots of the mentioned statistics. 

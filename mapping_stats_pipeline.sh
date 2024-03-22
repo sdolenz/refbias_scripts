@@ -39,13 +39,13 @@ echo
 
 Rscript modify_tsv.R
 
-# run modify_tsv2.sh 
+# run cat_tsv.sh 
 
 echo
-echo "Running modify_tsv2.sh"
+echo "Running cat_tsv.sh"
 echo
 
-bash modify_tsv2.sh
+bash cat_tsv.sh
 
 #change directory back to mapping_stats
 

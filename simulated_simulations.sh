@@ -12,6 +12,7 @@ for species in elephant rhino ; do
     div=${path}/mismatch/div_${divergence}_single-
     
     # Create the necessary directories
+    mkdir -p ${path}
     mkdir -p ${path}/div_simulations/${species}/div_${divergence}/endo/
     mkdir -p ${path}/div_simulations/${species}/div_${divergence}/cont/
     mkdir -p ${path}/div_simulations/${species}/div_${divergence}/bact/

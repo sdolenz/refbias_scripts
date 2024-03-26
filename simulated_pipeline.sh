@@ -22,7 +22,7 @@ path2=...your parent directory.../sim_libraries
 mkdir -p ${path2}
 cd ${path2}
 
-# Construct simulated libraries 
+# Construct simulated libraries (this uses the simulated_read_selection.py script)
 
 bash simulated_building_libraries.sh
 

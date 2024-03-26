@@ -24,4 +24,6 @@ cd ${path2}
 
 # Construct simulated libraries 
 
-bash simulated_building_libraries
+bash simulated_building_libraries.sh
+
+# Map simulated libraries 

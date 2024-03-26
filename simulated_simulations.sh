@@ -1,10 +1,15 @@
+
+path=...your parent directory.../gargammel
+
+mkdir -p ${path}
+cd ${path}
+
 # Simulating reads with divergence
 
 for species in elephant rhino ; do 
 
   for div in 1 2 3 4 5 6 9 12 15 ; do 
   
-    path=...your parent directory.../gargammel
     ref_fasta=...your parent directory.../ref_genomes/${species}_genome.fa
     size_dist=${path}/size_dist/size_dist.tsv
     to_sim=${path}/div_simulations/${species}/div_${divergence}/
@@ -12,7 +17,6 @@ for species in elephant rhino ; do
     div=${path}/mismatch/div_${divergence}_single-
     
     # Create the necessary directories
-    mkdir -p ${path}
     mkdir -p ${path}/div_simulations/${species}/div_${divergence}/endo/
     mkdir -p ${path}/div_simulations/${species}/div_${divergence}/cont/
     mkdir -p ${path}/div_simulations/${species}/div_${divergence}/bact/

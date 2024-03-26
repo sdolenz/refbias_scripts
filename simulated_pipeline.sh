@@ -26,9 +26,10 @@ cd ${path2}
 
 bash simulated_building_libraries.sh
 
-# Map simulated libraries 
+# Map simulated libraries using bwa-aln, bwa-mem, sensitive end-to-end bowtie2, very-sensitive end-to-end bowtie2, and sensitive local bowtie2
+# This is in the form of a for loop, but this will take a long time, it is recommended transforming this into an array (thread set to 8, but can be changed)
 
-
+bash simulated_mapping.sh 
 
 
 

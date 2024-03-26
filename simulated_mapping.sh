@@ -48,7 +48,7 @@ for species in elephant rhino ; do
                                     echo "Converting fasta to fastq"
                                     echo 
                 
-                                    reformat.sh in="${sim_fasta}" out="${sim_fastq}" overwrite=t qfake=40 
+                                    reformat.sh in=${sim_fasta} out=${sim_fastq} overwrite=t qfake=40 
                                     echo 
                                     echo "fastq created"
                                     echo 
@@ -72,14 +72,14 @@ for species in elephant rhino ; do
                                     samtools rmdup -sS $sorted_bam $deduped_bam
 
                 
-                                    samtools view -bq 1 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam"
-                                    samtools view -bq 20 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam"
-                                    samtools view -bq 25 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam"
-                                    samtools view -bq 30 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam"
+                                    samtools view -bq 1 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam
+                                    samtools view -bq 20 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam
+                                    samtools view -bq 25 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam
+                                    samtools view -bq 30 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam
                 
                 
                                     mv $mapped_sam ${path}/temp_BAM_SAM/
@@ -89,13 +89,13 @@ for species in elephant rhino ; do
 
                                 if [ ${mapper} == "verysensitive_bowtie" ] ; then
                 
-                                    cp "${cp_path}/${species}_div${div}_${quality}.fa" "${path}/sim_DNA/"
+                                    cp ${cp_path}/${species}_div${div}_${quality}.fa ${path}/sim_DNA/
                 
                                     echo 
                                     echo "Converting fasta to fastq"
                                     echo 
                 
-                                    reformat.sh in="${sim_fasta}" out="${sim_fastq}" overwrite=t qfake=40 
+                                    reformat.sh in=${sim_fasta} out=${sim_fastq} overwrite=t qfake=40 
                                     echo 
                                     echo "fastq created"
                                     echo 
@@ -119,14 +119,14 @@ for species in elephant rhino ; do
                                     samtools rmdup -sS $sorted_bam $deduped_bam
 
                 
-                                    samtools view -bq 1 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam"
-                                    samtools view -bq 20 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam"
-                                    samtools view -bq 25 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam"
-                                    samtools view -bq 30 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam"
+                                    samtools view -bq 1 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam
+                                    samtools view -bq 20 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam
+                                    samtools view -bq 25 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam
+                                    samtools view -bq 30 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam
                 
                 
                                     mv $mapped_sam ${path}/temp_BAM_SAM/
@@ -136,13 +136,13 @@ for species in elephant rhino ; do
 
                                 if [ ${mapper} == "local_bowtie" ] ; then
                 
-                                    cp "${cp_path}/${species}_div${div}_${quality}.fa" "${path}/sim_DNA/"
+                                    cp ${cp_path}/${species}_div${div}_${quality}.fa ${path}/sim_DNA/
                 
                                     echo 
                                     echo "Converting fasta to fastq"
                                     echo 
                 
-                                    reformat.sh in="${sim_fasta}" out="${sim_fastq}" overwrite=t qfake=40 
+                                    reformat.sh in=${sim_fasta} out=${sim_fastq} overwrite=t qfake=40 
                                     echo 
                                     echo "fastq created"
                                     echo 
@@ -166,14 +166,14 @@ for species in elephant rhino ; do
                                     samtools rmdup -sS $sorted_bam $deduped_bam
 
                 
-                                    samtools view -bq 1 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam"
-                                    samtools view -bq 20 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam"
-                                    samtools view -bq 25 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam"
-                                    samtools view -bq 30 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam"
+                                    samtools view -bq 1 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam
+                                    samtools view -bq 20 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam
+                                    samtools view -bq 25 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam
+                                    samtools view -bq 30 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam
                 
                 
                                     mv $mapped_sam ${path}/temp_BAM_SAM/
@@ -185,13 +185,13 @@ for species in elephant rhino ; do
                                 elif [ ${mapper} == "bwaaln" ] ; then
                 
                 
-                                    cp "${cp_path}/${species}_div${div}_${quality}.fa" "${path}/sim_DNA/"
+                                    cp ${cp_path}/${species}_div${div}_${quality}.fa ${path}/sim_DNA/
                 
                                     echo 
                                     echo "Converting fasta to fastq"
                                     echo 
                 
-                                    reformat.sh in="${sim_fasta}" out="${sim_fastq}" overwrite=t qfake=40
+                                    reformat.sh in=${sim_fasta} out=${sim_fastq} overwrite=t qfake=40
                                     echo 
                                     echo "fastq created"
                                     echo 
@@ -201,7 +201,7 @@ for species in elephant rhino ; do
                                     echo
                                     echo
                 
-                                    bwa aln "$bwa_ref" -t 8 -l 16500 -n 0.01 -o 2 "$sim_fastq" > "$mapped_sai"
+                                    bwa aln $bwa_ref -t 8 -l 16500 -n 0.01 -o 2 $sim_fastq > $mapped_sai
                 
                                     echo
                                     echo
@@ -211,21 +211,21 @@ for species in elephant rhino ; do
                                     echo "Aligned reads located in ${mapped_sai}"
                                     echo
                 
-                                    bwa samse "$bwa_ref" "$mapped_sai" "$sim_fastq" > "$mapped_sam"
-                                    samtools view -bS "$mapped_sam" > "$mapped_bam"
-                                    samtools sort "$mapped_bam" -o "$sorted_bam"
-                                    samtools index "$sorted_bam" "$sorted_bam.bai"
-                                    samtools rmdup -sS "$sorted_bam" "$deduped_bam"
+                                    bwa samse $bwa_ref $mapped_sai $sim_fastq > $mapped_sam
+                                    samtools view -bS $mapped_sam > $mapped_bam
+                                    samtools sort $mapped_bam -o $sorted_bam
+                                    samtools index $sorted_bam $sorted_bam.bai
+                                    samtools rmdup -sS $sorted_bam $deduped_bam
 
                 
-                                    samtools view -bq 1 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam"
-                                    samtools view -bq 20 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam"
-                                    samtools view -bq 25 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam"
-                                    samtools view -bq 30 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam"
+                                    samtools view -bq 1 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam
+                                    samtools view -bq 20 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam
+                                    samtools view -bq 25 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam
+                                    samtools view -bq 30 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam
                 
                 
                                     mv $mapped_sai ${path}/temp_BAM_SAM/
@@ -237,13 +237,13 @@ for species in elephant rhino ; do
                 
                                 elif [ ${mapper} == "bwamem" ] ; then
                 
-                                    cp "${cp_path}/${species}_div${div}_${quality}.fa" "${path}/sim_DNA/"
+                                    cp ${cp_path}/${species}_div${div}_${quality}.fa ${path}/sim_DNA/
                 
                                     echo 
                                     echo "Converting fasta to fastq"
                                     echo 
                 
-                                    reformat.sh in="${sim_fasta}" out="${sim_fastq}" overwrite=t qfake=40
+                                    reformat.sh in=${sim_fasta} out=${sim_fastq} overwrite=t qfake=40
                                     echo 
                                     echo "fastq created"
                                     echo 
@@ -253,7 +253,7 @@ for species in elephant rhino ; do
                                     echo
                                     echo
                 
-                                    bwa mem "$bwa_ref" -t 8 -k 19 -r 2.5 "$sim_fastq" > "$mapped_sam"
+                                    bwa mem $bwa_ref -t 8 -k 19 -r 2.5 $sim_fastq > $mapped_sam
                 
                                     echo
                                     echo
@@ -262,19 +262,19 @@ for species in elephant rhino ; do
                                     echo "Aligned reads located in ${mapped_sam}"
                                     echo
                 
-                                    samtools view -bS "$mapped_sam" > "$mapped_bam"
-                                    samtools sort "$mapped_bam" -o "$sorted_bam"
-                                    samtools index "$sorted_bam" "$sorted_bam.bai"
-                                    samtools rmdup -sS "$sorted_bam" "$deduped_bam"
+                                    samtools view -bS $mapped_sam > $mapped_bam
+                                    samtools sort $mapped_bam -o $sorted_bam
+                                    samtools index $sorted_bam $sorted_bam.bai
+                                    samtools rmdup -sS $sorted_bam $deduped_bam
                 
-                                    samtools view -bq 1 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam"
-                                    samtools view -bq 20 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam"
-                                    samtools view -bq 25 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam"
-                                    samtools view -bq 30 "${deduped_bam}" > "${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam"
-                                    samtools index "${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam"
+                                    samtools view -bq 1 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam
+                                    samtools view -bq 20 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam
+                                    samtools view -bq 25 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam
+                                    samtools view -bq 30 ${deduped_bam} > ${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ1.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ20.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ25.bam
+                                    samtools index ${path}/${mapper}_${species}_div${div}_${quality}_MQ30.bam
                 
                                     mv $mapped_sam ${path}/temp_BAM_SAM/
                                     mv $mapped_bam ${path}/temp_BAM_SAM/

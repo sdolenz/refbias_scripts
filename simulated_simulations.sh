@@ -5,7 +5,7 @@ for species in elephant rhino ; do
   for div in 1 2 3 4 5 6 9 12 15 ; do 
   
     path=...your parent directory.../gargammel
-    ref_fasta=${path}/genomes/${species}_genome.fa
+    ref_fasta=...your parent directory.../ref_genomes/${species}_genome.fa
     size_dist=${path}/size_dist/size_dist.tsv
     to_sim=${path}/div_simulations/${species}/div_${divergence}/
     sim=${path}/div_simulations/data/${species}_div${divergence}
@@ -41,7 +41,7 @@ done
 for species in elephant rhino human bacteria; do
 
     path=...your parent directory.../gargammel
-    ref_fasta=./genomes/${species}_genome.fa
+    ref_fasta=...your parent directory.../ref_genomes/${species}_genome.fa
     size_dist=${path}/size_dist/size_dist.tsv
     to_sim=${path}/nodiv_simulations/${species}/
     sim=${path}/nodiv_simulations/data/${species}

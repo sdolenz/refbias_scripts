@@ -1,7 +1,7 @@
 # Runs Fastp to trim adapters, filter for ≥20bp (apart from Siberian Unicorn and Mastadon, which is ≥30), and merge reads
 
 
-path=...your parent directory.../emperical_mappings/og_fastq
+path=...your parent directory.../emperical_mappings/
 
 
 # Runs Fastp for Siberian Unicorn, Maize, Human, Steppe Mammoth, and American Mastodon libraries

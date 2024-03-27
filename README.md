@@ -13,12 +13,16 @@ Here are the workflows and scripts used for the analysis of reference and read l
 
 
 ## Simulated datasets workflow
-This will generate and map simulated libraries comprising of "endogenous" (Asian elephant or Black rhino) reads in addition to human and bacterial "contamination" with 0-5%, 6%, 9%, 12%, and 15% divergence. For more information on the methods, please refer to the paper. In order to run this, please download the simulated_* scripts ([simulated_mismatch.sh](simulated_mismatch.sh), [simulated_simulations.sh](simulated_simulations.sh), [simulated_read_selection.py](simulated_read_selection.py), [simulated_building_libraries.sh](simulated_building_libraries.sh), and [simulated_mapping.sh](simulated_mapping.sh)). Then run the [simulated_pipeline.sh](simulated_pipeline.sh) to generate and map the simulated libraries. 
+This will generate and map simulated libraries comprising of "endogenous" (Asian elephant or Black rhino) reads in addition to human and bacterial "contamination" with 0-5%, 6%, 9%, 12%, and 15% divergence. For more information on the methods, please refer to the paper. The simulations use the tool gargammel, to download and an access the manual please visit [https://github.com/grenaud/gargammel.git](https://github.com/grenaud/gargammel.git). 
 
-*It should be noted that the mapping script has been modified for this repository to be in the form of a for-loop for ease, but it is time intensive to run it in this form and therefore it is advised that the script is modified to an array. Also, the number of threads used has been set to 8, but it should be altered to your needs.*
+In order to run this, please download the simulated_* scripts ([simulated_mismatch.sh](simulated_mismatch.sh), [simulated_simulations.sh](simulated_simulations.sh), [simulated_read_selection.py](simulated_read_selection.py), [simulated_building_libraries.sh](simulated_building_libraries.sh), and [simulated_mapping.sh](simulated_mapping.sh)). Then run the [simulated_pipeline.sh](simulated_pipeline.sh) to generate and map the simulated libraries. 
+
+*It should be noted that the mapping script has been modified for this repository to be in the form of a for-loop for ease of understanding, but it is time intensive to run it in this form and therefore it is advised that the script is modified to an array. Also, the number of threads used has been set to 8, but it should be altered to your needs.*
 
 ## Emperical datasets workflow
-...
+This will run fastp on ancient emperical datasets used (including Human, American Mastodon, Steppe Mammoth, Maize, Siberian Unicorn, and Horse) and map the processed fastqs using BWA-aln (in addition to bwa-mem and bowtie2 for the American Mastadon). For more information on the methods, please refer to the paper. To run this, please download the emperical_* scripts ([emperical_fastp.sh](emperical_fastp.sh) and [emperical_mapping.sh](emperical_mapping.sh)). Then run [emperical_pipeline.sh](emperical_pipeline.sh). 
+
+*It should be noted that the mapping script has been modified for this repository to be in the form of a for-loop for ease of understanding, but it is time intensive to run it in this form and therefore it is advised that the script is modified to an array. Also, the number of threads used has been set to 20, but it should be altered to your needs.*
 
 ## AMBER scripts
 ...

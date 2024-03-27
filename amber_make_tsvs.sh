@@ -1,4 +1,4 @@
-#create individual tsv files
+# Create individual TSV files
 
 for species in elephant rhino ; do
 
@@ -34,7 +34,7 @@ done
 
 
 
-#cat tsv files for amber input
+# Concatenate TSV files for amber input
 
 for species in elephant rhino ; do
 

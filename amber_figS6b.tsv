@@ -1,0 +1,3 @@
+--sensitive	...your parent directory here.../sensitive_bowtie_map/sensitive_elephant_div1_100end_MQ1.bam
+--very-sensitive	...your parent directory here.../verysensitive_bowtie_map/verysensitive_elephant_div1_100end_MQ1.bam
+--sensitive-local	...your parent directory here.../local_bowtie_map/local_bowtie_elephant_div1_100end_MQ1.bam

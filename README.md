@@ -1,5 +1,5 @@
 # refbias_scripts
-Here are the workflows and scripts used for the analysis of reference and read length biases on simulated and emperical data found in Dolenz et al. (Unravelling reference bias in ancient DNA datasets) currently in review at the Journal of Bioinformatics. For any questions, comments, or concerns please feel free to reach out to me at stephanie.dolenz@geo.su.se. 
+Here are the workflows, scripts, and files used for the analysis of reference and read length biases on simulated and emperical data found in Dolenz et al. (Unravelling reference bias in ancient DNA datasets) currently in review at the Journal of Bioinformatics. For any questions, comments, or concerns please feel free to reach out to me at stephanie.dolenz@geo.su.se. 
 
 
 ## Table Of Contents

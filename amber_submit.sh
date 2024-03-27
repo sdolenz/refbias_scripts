@@ -45,7 +45,7 @@ for species in elephant rhino ; do
   
         MQ_tsv_path=...your parent directory.../AMBER/${mapper}_tsv/div${div}_tsv
         MQ_plot_path=...your parent directory.../AMBER/plots/${mapper}_${species}_plots_by_MQ
-        
+
         mkdir -p ${MQ_plot_path}
         
         # running AMBER

@@ -6,16 +6,16 @@ Here are the workflows and scripts used for the analysis of reference and read l
 
 * [Simulated Datasets Generation and Processing Scripts](#simulated-datasets-workflow)
 * [Emperical Datasets Processing Scripts](#emperical-datasets-workflow)
-* [Running AMBER Scripts](#amber-scripts)
+* [Running AMBER Workflow](#amber-workflow)
 * [Read Origins Scripts](#read-origins-workflow)
 * [Mapping Stats Scripts](#mapping-stats-workflow)
 * [Acknowledgements](#acknowledgements)
 
 
 ## Simulated datasets workflow
-This will generate and map simulated libraries comprising of "endogenous" (Asian elephant or Black rhino) reads in addition to human and bacterial "contamination" with 0-5%, 6%, 9%, 12%, and 15% divergence. For more information on the methods, please refer to the paper. The simulations use the tool gargammel, to download and an access the manual please visit [https://github.com/grenaud/gargammel.git](https://github.com/grenaud/gargammel.git). 
+This will generate and map simulated libraries comprising of "endogenous" (Asian elephant or Black rhino) reads in addition to human and bacterial "contamination" with 0-5%, 6%, 9%, 12%, and 15% divergence. For more information on the methods, please refer to the paper. Generation of simulated datasets are made using gargammel. To download and access the manual please visit [https://github.com/grenaud/gargammel.git](https://github.com/grenaud/gargammel.git). 
 
-In order to run this, please download the simulated_* scripts ([simulated_mismatch.sh](simulated_mismatch.sh), [simulated_simulations.sh](simulated_simulations.sh), [simulated_read_selection.py](simulated_read_selection.py), [simulated_building_libraries.sh](simulated_building_libraries.sh), and [simulated_mapping.sh](simulated_mapping.sh)). Then run [simulated_pipeline.sh](simulated_pipeline.sh) to generate and map the simulated libraries. 
+In order to run this, please download the simulated_* scripts ([simulated_mismatch.sh](simulated_mismatch.sh), [simulated_simulations.sh](simulated_simulations.sh), [simulated_read_selection.py](simulated_read_selection.py), [simulated_building_libraries.sh](simulated_building_libraries.sh), and [simulated_mapping.sh](simulated_mapping.sh)) in addition to [simulated_size_dist.tsv](simulated_size_dist.tsv). Then run [simulated_pipeline.sh](simulated_pipeline.sh) to generate and map the simulated libraries. 
 
 *It should be noted that the mapping script has been modified for this repository to be in the form of a for-loop for ease of understanding, but it is time intensive to run it in this form and therefore it is advised that the script is modified to an array. Also, the number of threads used has been set to 8, but it should be altered to your needs.*
 
@@ -24,8 +24,8 @@ This will run fastp on ancient emperical datasets used (including Human, America
 
 *It should be noted that the mapping script has been modified for this repository to be in the form of a for-loop for ease of understanding, but it is time intensive to run it in this form and therefore it is advised that the script is modified to an array. Also, the number of threads used has been set to 20, but it should be altered to your needs.*
 
-## AMBER scripts
-...
+## AMBER workflow
+This will run AMBER on the simulated and ancient emperical datasets in order to reproduce AMBER plots in both the main text and the supplement. For more information on AMBER please refer to the paper and to download AMBER and access the manual please visit [https://github.com/tvandervalk/AMBER](https://github.com/tvandervalk/AMBER). For this workflow, please download all amber_* files and scripts 
 
 ## Read origins workflow
 This will generate tsvs and R plots of the proportions of reads mapping to either bacteria, human, or the endogenous species (Asian elephant or Black rhino). To run this, please download the read_origins* scripts ([read_origins_bam_to_tsv.py](read_origins_bam_to_tsv.py) and [read_origins_plots.R](read_origins_plots.R)), in addition to the [read_origins_all_headers.tsv](read_origins_all_headers.tsv). Then run the [read_origins_pipeline.sh](read_origins_pipeline.sh) which will calculate the proportion of reads from each of the simulated libraries that are from bacteria, human, or the endogenous species and produce line plots to interpret this data. 

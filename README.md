@@ -32,4 +32,7 @@ This will generate tsvs and R plots on the mapping statistics of the simulated l
 ## Acknowledgements
 I would like to thank my coauthors Tom van der Valk, Chenyu Jin, Jonas Oppenheimer, Muhammad Bilal Sharif, Ludovic Orlando, Beth Shapiro, Love Dalén, and Peter D. Heintzman for their help and insightful advice. Also, my amazing cat, Pip, for keeping me sane during all of the bug fixes. 
 
+For this project, we acknowledge support from Science for Life Laboratory (SciLifeLab), the National Genomics Infrastructure (NGI) funded by the Swedish Research Council, and the computational resources (project IDs: NAISS 2023/5-153 and 2023/6-95) provided by the National Academic Infrastructure for Supercomputing in Sweden (NAISS) at the Uppsala Multidisciplinary Center for Advanced Computational Science (UPPMAX), which is partially funded by the Swedish Research Council through grant agreement no. 2022-06725. Further, my PhD is supported by the Knut and Alice Wallenberg Foundation (KAW 2021.0048). 
+
+
 *This project utilized ChatGPT, OpenAI for assistance in writing and editing scripts.*

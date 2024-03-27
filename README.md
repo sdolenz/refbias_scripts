@@ -4,8 +4,8 @@ Here are the workflows and scripts used for the analysis of reference and read l
 
 ## Table Of Contents
 
-* [Simulated Datasets Generation and Processing Scripts](#simulated-datasets-workflow)
-* [Emperical Datasets Processing Scripts](#emperical-datasets-workflow)
+* [Simulated Datasets Generation and Mapping Scripts](#simulated-datasets-workflow)
+* [Emperical Datasets Processing and Mapping Scripts](#emperical-datasets-workflow)
 * [Running AMBER Workflow](#amber-workflow)
 * [Read Origins Scripts](#read-origins-workflow)
 * [Mapping Stats Scripts](#mapping-stats-workflow)
